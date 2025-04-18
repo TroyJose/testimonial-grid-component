@@ -170,7 +170,6 @@
         margin-block-end: 1.375em;
     }
 
-    
     img {
             border-radius: 100%;
             -webkit-border-radius: 100%;
@@ -183,13 +182,22 @@
 
     .testimonial-grid blockquote:nth-of-type(1) {
         background-color: var(--color-purple-500);
+        position: relative;
         
+        @media (min-width: 64rem) {
+            background-image: url("./images/bg-pattern-quotation.svg") ;
+            background-repeat: no-repeat;
+            background-position: top right 5em;
+            background-size: 8em;
+        }
+
         h2 {
             color: var(--color-purple-50);
         }
 
         header p {
             color: var(--color-neutral-grey-100);
+         
             
         }
 
@@ -207,7 +215,8 @@
 
         @media (min-width: 64rem) {
             grid-area: t1;
-         
+        
+
         }
     }
 
@@ -299,7 +308,7 @@
 
     .testimonial-grid blockquote:nth-of-type(5) {
         background-color: var(--color-neutral-white);
-        margin-block-end: 1em;
+
         h2 {
             color: var(--color-neutral-grey-500);
         }
